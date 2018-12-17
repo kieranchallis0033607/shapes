@@ -43,5 +43,20 @@ namespace shapes
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                double calc2 = double.Parse(textBox2.Text);
+                double answer2 = calc2 * calc2 * calc2;
+                label11.Text = answer2.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("enter a number");
+            }
+        }
     }
 }
